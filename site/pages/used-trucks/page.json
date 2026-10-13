@@ -79,6 +79,27 @@
                     "config": {
                       "heading": "Recently arrived",
                       "limit": 8
+                    },
+                    "snapshot": {
+                      "listings": [
+                        {
+                          "slug": "3-international-workstar",
+                          "href": "products/3-international-workstar",
+                          "title": "INTERNATIONAL WORKSTAR",
+                          "price": "$0",
+                          "facts": [
+                            {
+                              "label": "Make",
+                              "value": "INTERNATIONAL"
+                            },
+                            {
+                              "label": "Model",
+                              "value": "WORKSTAR"
+                            }
+                          ],
+                          "image": null
+                        }
+                      ]
                     }
                   }
                 }
@@ -228,6 +249,9 @@
                           "a": "Delivery can be arranged — ask your salesperson for a quote."
                         }
                       ]
+                    },
+                    "snapshot": {
+                      "items": []
                     }
                   }
                 }

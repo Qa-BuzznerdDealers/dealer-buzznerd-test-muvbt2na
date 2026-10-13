@@ -226,6 +226,9 @@
                           "a": "Yes — ask about our fleet maintenance programs and contract maintenance."
                         }
                       ]
+                    },
+                    "snapshot": {
+                      "items": []
                     }
                   }
                 }

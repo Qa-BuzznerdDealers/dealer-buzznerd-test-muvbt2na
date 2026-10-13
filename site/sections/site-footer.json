@@ -1,0 +1,246 @@
+{
+  "version": 2,
+  "id": "site-footer",
+  "name": "Site footer",
+  "css": "[data-bz-section=\"site-footer\"] [data-bz-type=\"heading\"] h2 { font-size: 18px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: var(--space-3); }",
+  "js": "",
+  "props": [
+    {
+      "key": "about",
+      "type": "textarea",
+      "label": "About line",
+      "default": "New and used heavy-duty trucks, genuine parts and factory-trained service — one team keeping your trucks earning."
+    },
+    {
+      "key": "legal",
+      "type": "text",
+      "label": "Copyright line",
+      "default": "© BuzzNerd Trucks LLC. All rights reserved. Prices, specifications and availability are subject to change."
+    },
+    {
+      "key": "linkColumns",
+      "type": "list",
+      "label": "Link columns",
+      "fields": [
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "menuId",
+          "type": "text",
+          "label": "Menu id",
+          "description": "A menu from the Menus screen."
+        }
+      ],
+      "default": [
+        {
+          "heading": "Trucks",
+          "menuId": "footer-trucks"
+        },
+        {
+          "heading": "Parts & Service",
+          "menuId": "footer-service"
+        },
+        {
+          "heading": "Company",
+          "menuId": "footer-company"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "footer",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "footer-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "footer-brand",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "footer-logo",
+                  "type": "logo",
+                  "props": {
+                    "url": "/",
+                    "height": 40,
+                    "image": {
+                      "src": "/logo-light.svg",
+                      "alt": "BuzzNerd Trucks",
+                      "width": 360,
+                      "height": 72
+                    }
+                  }
+                },
+                {
+                  "id": "footer-about",
+                  "type": "text",
+                  "props": {
+                    "text": "{{about}}"
+                  }
+                },
+                {
+                  "id": "footer-call",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "call-us"
+                      },
+                      {
+                        "ctaId": "find-location"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "footer-cols",
+                  "type": "row",
+                  "props": {
+                    "gap": 5,
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "footer-menu-col",
+                      "type": "column",
+                      "props": {
+                        "span": 4,
+                        "repeat": "linkColumns"
+                      },
+                      "children": [
+                        {
+                          "id": "footer-menu-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{heading}}",
+                            "headingLevel": 2
+                          }
+                        },
+                        {
+                          "id": "footer-menu",
+                          "type": "menu",
+                          "props": {
+                            "menuId": "{{menuId}}",
+                            "layout": "vertical"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "styles": {
+                    "base": {
+                      "columnGap": 32
+                    },
+                    "tablet": {
+                      "columnGap": 24
+                    },
+                    "mobile": {
+                      "columnGap": 0
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 32
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        },
+        {
+          "id": "footer-base",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "styles": {
+            "base": {
+              "marginTop": 48,
+              "paddingTop": 24,
+              "borderWidth": 0,
+              "borderTopWidth": 1,
+              "borderStyle": "solid",
+              "borderColor": "#2c3139"
+            }
+          },
+          "children": [
+            {
+              "id": "footer-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "legal-copy",
+                  "type": "text",
+                  "props": {
+                    "text": "{{legal}}"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": 14,
+                      "textColor": "#9aa1ab"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-legal",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "legal-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "legal",
+                    "layout": "horizontal",
+                    "align": "end"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

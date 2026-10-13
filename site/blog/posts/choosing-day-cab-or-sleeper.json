@@ -1,0 +1,85 @@
+{
+  "slug": "choosing-day-cab-or-sleeper",
+  "title": "Day cab or sleeper? How to choose for your routes",
+  "date": "2026-09-29",
+  "description": "The right tractor depends on your lanes, your drivers and your freight. A quick guide from our sales team.",
+  "coverImage": "/images/cat-sleeper.svg",
+  "status": "published",
+  "version": 2,
+  "nodes": [
+    {
+      "id": "choosing-day-cab-or-sleeper-body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "choosing-day-cab-or-sleeper-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "choosing-day-cab-or-sleeper-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "choosing-day-cab-or-sleeper-p0",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the first questions our sales team asks is how far your trucks go before they come home. That answer usually decides between a day cab and a sleeper.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "choosing-day-cab-or-sleeper-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "When a day cab makes sense",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "choosing-day-cab-or-sleeper-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "Local and regional work where drivers are home every night: lighter tare weight, better manoeuvrability in tight yards and a lower purchase price.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "choosing-day-cab-or-sleeper-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "When you need a sleeper",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "choosing-day-cab-or-sleeper-p4",
+                  "type": "text",
+                  "props": {
+                    "text": "Over-the-road lanes with overnight stops. Sleeper size is a balance between driver comfort, which helps retention, and weight and length limits.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "choosing-day-cab-or-sleeper-p5",
+                  "type": "text",
+                  "props": {
+                    "text": "Not sure? Tell us about your lanes and we will spec a truck around them.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

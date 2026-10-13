@@ -1,0 +1,101 @@
+{
+  "slug": "pre-trip-inspection-checklist",
+  "title": "A pre-trip inspection checklist that catches problems early",
+  "date": "2026-09-08",
+  "description": "Ten minutes before you roll can save a roadside breakdown. Here is what our technicians check first.",
+  "coverImage": "/images/service-bay.svg",
+  "status": "published",
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pre-trip-inspection-checklist-body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "pre-trip-inspection-checklist-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "pre-trip-inspection-checklist-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pre-trip-inspection-checklist-p0",
+                  "type": "text",
+                  "props": {
+                    "text": "A thorough pre-trip inspection is the cheapest maintenance there is. Our technicians see the same failures again and again, and most of them give a warning first.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "pre-trip-inspection-checklist-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Under the hood",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pre-trip-inspection-checklist-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "Check engine oil, coolant and DEF levels, look for leaks under the truck, and inspect belts and hoses for cracks or glazing.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "pre-trip-inspection-checklist-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Brakes and air system",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pre-trip-inspection-checklist-p4",
+                  "type": "text",
+                  "props": {
+                    "text": "Build air pressure, listen for leaks, check slack adjusters and pushrod stroke, and confirm the low-air warning works.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "pre-trip-inspection-checklist-h5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tires, wheels and lights",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pre-trip-inspection-checklist-p6",
+                  "type": "text",
+                  "props": {
+                    "text": "Check tread depth and inflation, look for missing lug nuts or rust trails, and walk around with the lights and flashers on.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "pre-trip-inspection-checklist-p7",
+                  "type": "text",
+                  "props": {
+                    "text": "If anything looks wrong, schedule service before it becomes a tow. Our service team can usually fit urgent safety items in the same day.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

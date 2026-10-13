@@ -1,0 +1,116 @@
+{
+  "version": 2,
+  "id": "cta-band",
+  "name": "Call-to-action band",
+  "css": "",
+  "js": "",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Ready to put a truck to work?"
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Supporting line",
+      "default": "Tell us the job and we will spec it, price it and tell you honestly what is on the lot."
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button label",
+      "default": "Request a quote"
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": "/new-trucks#form-request-a-quote"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "accent",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "cta-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cta-actions",
+              "type": "column",
+              "props": {
+                "span": 5,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "cta-buttons",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary",
+                        "intent": "cta-band"
+                      },
+                      {
+                        "ctaId": "call-us"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 32
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

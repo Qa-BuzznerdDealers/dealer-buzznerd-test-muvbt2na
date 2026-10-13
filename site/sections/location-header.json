@@ -1,0 +1,181 @@
+{
+  "version": 2,
+  "id": "location-header",
+  "name": "Location page header",
+  "css": "",
+  "js": "",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location",
+      "description": "Filled in per page on generated location pages."
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This location",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "subtitle",
+          "type": "text",
+          "label": "Trading name"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "services",
+          "type": "text",
+          "label": "Services"
+        },
+        {
+          "key": "brands",
+          "type": "text",
+          "label": "Brands"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lh",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "lh-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "end",
+            "stackOn": "tablet",
+            "repeat": "rooftop"
+          },
+          "children": [
+            {
+              "id": "lh-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "lh-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "eyebrow": "{{subtitle}}",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "lh-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}"
+                  }
+                },
+                {
+                  "id": "lh-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Call {{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "primary",
+                        "intent": "call-dealer"
+                      },
+                      {
+                        "label": "Get directions",
+                        "url": "{{mapUrl}}",
+                        "style": "secondary",
+                        "intent": "get-directions"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "lh-facts",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "lh-services",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Services",
+                        "desc": "{{services}}"
+                      },
+                      {
+                        "label": "Brands",
+                        "desc": "{{brands}}"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 32
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

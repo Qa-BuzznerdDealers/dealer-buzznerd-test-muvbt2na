@@ -1,0 +1,262 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "used-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Used trucks & trailers",
+        "headline": "Used trucks you can trust.",
+        "subhead": "Every used unit is inspected in our own shop, reconditioned where it needs it and sold with an honest history.",
+        "ctas": [
+          {
+            "ctaId": "shop-used"
+          },
+          {
+            "ctaId": "value-trade"
+          }
+        ],
+        "image": {
+          "src": "/images/cat-day-cab.svg",
+          "alt": "Day cab tractor",
+          "width": 800,
+          "height": 500
+        },
+        "showSearch": false,
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "used-why",
+      "type": "iconGrid",
+      "props": {
+        "heading": "Why buy used from us",
+        "items": [
+          {
+            "label": "Multi-point inspection",
+            "desc": "Engine, aftertreatment, brakes, tires and electrical checked by our technicians."
+          },
+          {
+            "label": "Reconditioned",
+            "desc": "Service items handled before the truck goes on the lot."
+          },
+          {
+            "label": "History you can read",
+            "desc": "Service records and history reports where available."
+          },
+          {
+            "label": "Warranty options",
+            "desc": "Extended coverage available on qualifying units."
+          }
+        ]
+      }
+    },
+    {
+      "id": "used-stock-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "used-stock-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "used-stock-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "used-stock",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {
+                      "heading": "Recently arrived",
+                      "limit": 8
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "used-trade",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "used-trade-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "used-trade-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "used-trade-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What is your truck worth?",
+                    "eyebrow": "Trade-ins",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "used-trade-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us about the truck or trailer you are trading and an appraiser will get back to you with a figure — whether you buy from us or not."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "used-trade-formcol",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 6
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "shadow": "md"
+                }
+              },
+              "children": [
+                {
+                  "id": "used-trade-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "value-my-trade"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "used-faq-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "used-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "used-faq-col-h",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "used-faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Used truck questions",
+                    "eyebrow": "FAQ",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "used-faq-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "used-faq",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Can I see the inspection report?",
+                          "a": "Yes. Ask your salesperson for the inspection and any service records we hold for the unit."
+                        },
+                        {
+                          "q": "Do you finance used and older trucks?",
+                          "a": "Yes. We work with lenders who finance used equipment, including older model years."
+                        },
+                        {
+                          "q": "Can you deliver a truck to me?",
+                          "a": "Delivery can be arranged — ask your salesperson for a quote."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "used-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "heading": "Can’t find the right unit?",
+          "body": "Tell us what you need and we will search our network and auctions for it.",
+          "ctaLabel": "Contact sales",
+          "ctaUrl": "/contact#form-request-info"
+        }
+      }
+    }
+  ]
+}

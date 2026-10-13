@@ -1,0 +1,211 @@
+{
+  "version": 2,
+  "id": "feature-split",
+  "name": "Feature split (image + copy)",
+  "css": "",
+  "js": "",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Body",
+      "default": ""
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Image"
+    },
+    {
+      "key": "points",
+      "type": "list",
+      "label": "Bullet points",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Point"
+        },
+        {
+          "key": "desc",
+          "type": "text",
+          "label": "Detail"
+        }
+      ]
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button label",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fs",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "fs-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "fs-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fs-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "radius": 6,
+                      "aspectRatio": "3/2",
+                      "objectFit": "cover"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fs-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fs-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "fs-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}"
+                  }
+                },
+                {
+                  "id": "fs-points",
+                  "type": "row",
+                  "props": {
+                    "gap": 3,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "fs-point",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "points"
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 0,
+                          "borderLeftWidth": 3,
+                          "borderStyle": "solid",
+                          "borderColor": "accent",
+                          "paddingLeft": 16
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "fs-point-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{label}}",
+                            "headingLevel": 3
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 20,
+                              "marginBottom": 2
+                            }
+                          }
+                        },
+                        {
+                          "id": "fs-point-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{desc}}"
+                          },
+                          "styles": {
+                            "base": {
+                              "textColor": "muted",
+                              "marginTop": 0
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fs-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary",
+                        "intent": "feature-cta"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

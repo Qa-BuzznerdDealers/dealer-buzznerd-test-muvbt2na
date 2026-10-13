@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "css": "/* Heroes: the artwork reads as a picture, with a scrim behind the copy. */\n.bz-block--hero { min-height: clamp(420px, 62vh, 640px); display: flex; align-items: center; }\n.bz-block--hero > .bz-container { width: 100%; }\n.bz-hero__img { opacity: 0.9; object-position: right bottom; }\n.bz-hero__bg::after { content: \"\"; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(11 13 16 / 94%) 0%, rgb(11 13 16 / 78%) 40%, rgb(11 13 16 / 15%) 75%, rgb(11 13 16 / 0%) 100%); }\n@media (max-width: 1100px) { .bz-hero__bg::after { background: rgb(11 13 16 / 78%); } }\n\n/* Six-card category grids sit three across rather than four-and-two. */\n@media (min-width: 1101px) {\n  [data-bz-type=\"categoryGrid\"] .bz-grid--4:has(> :nth-child(6):last-child) { grid-template-columns: repeat(3, 1fr); }\n}\n\n/* Secondary and link buttons on dark and red bands. */\n:is(.bz-section--bg-ink, .bz-section--bg-accent) .bz-btn--secondary { background: transparent; color: #fff; border-color: rgb(255 255 255 / 60%); }\n:is(.bz-section--bg-ink, .bz-section--bg-accent) .bz-btn--secondary:hover { background: #fff; color: var(--ink); }\n.bz-section--bg-accent .bz-btn--primary { background: #fff; color: var(--accent-dark); border-color: #fff; }\n.bz-section--bg-accent .bz-btn--link { color: #fff; }\n.bz-section--bg-ink .bz-btn--link { color: #ff8a96; }\n.bz-section--bg-ink .bz-eyebrow, .bz-section--bg-accent .bz-eyebrow { color: #ff8a96; }\n",
+  "js": "",
+  "headStart": "",
+  "headEnd": "",
+  "bodyStart": "",
+  "beforeFooter": "",
+  "bodyEnd": ""
+}

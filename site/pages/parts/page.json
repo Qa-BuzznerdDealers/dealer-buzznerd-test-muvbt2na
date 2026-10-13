@@ -1,0 +1,169 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "parts-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Parts",
+        "headline": "The parts you need, in stock.",
+        "subhead": "Genuine OEM and all-makes parts stocked deep at every branch — with delivery, will-call and online ordering.",
+        "ctas": [
+          {
+            "ctaId": "shop-parts"
+          },
+          {
+            "ctaId": "parts-request"
+          }
+        ],
+        "image": {
+          "src": "/images/parts-counter.svg",
+          "alt": "Shelves of truck parts",
+          "width": 1200,
+          "height": 800
+        },
+        "showSearch": false,
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "parts-why",
+      "type": "iconGrid",
+      "props": {
+        "heading": "Parts that keep you moving",
+        "items": [
+          {
+            "label": "Genuine OEM",
+            "desc": "Factory parts for the trucks we sell and service."
+          },
+          {
+            "label": "All makes",
+            "desc": "Filters, brakes, lighting, electrical and more for any truck or trailer."
+          },
+          {
+            "label": "Delivery",
+            "desc": "Scheduled delivery routes to shops and fleets."
+          },
+          {
+            "label": "Order online",
+            "desc": "Check price and availability any time.",
+            "url": "/store/parts"
+          }
+        ]
+      }
+    },
+    {
+      "id": "parts-fleet",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-split",
+        "values": {
+          "eyebrow": "Fleet programs",
+          "heading": "Parts programs for fleets",
+          "body": "Set up an account and we will stock what your trucks use, deliver on your schedule and bill you once a month.",
+          "image": {
+            "src": "/images/parts-counter.svg",
+            "alt": "Shelves of truck parts",
+            "width": 1200,
+            "height": 800
+          },
+          "points": [
+            {
+              "label": "Stocking agreements",
+              "desc": "The parts your fleet runs on, held for you."
+            },
+            {
+              "label": "Account pricing",
+              "desc": "Volume pricing and consolidated invoicing."
+            },
+            {
+              "label": "Dedicated counter staff",
+              "desc": "People who know your units by number."
+            }
+          ],
+          "ctaLabel": "Ask about a fleet account",
+          "ctaUrl": "/parts#form-parts-enquiry"
+        }
+      }
+    },
+    {
+      "id": "parts-ask",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "parts-ask-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "parts-ask-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "parts-ask-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Can’t find a part?",
+                    "eyebrow": "Parts desk",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "parts-ask-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Send us the part number or VIN and what you need. The counter will confirm price, stock and fitment."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "parts-ask-formcol",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 6
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "shadow": "md"
+                }
+              },
+              "children": [
+                {
+                  "id": "parts-ask-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "parts-enquiry"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "version": 2,
+  "id": "location-cards",
+  "name": "Location cards",
+  "css": "",
+  "js": "",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Our locations"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "This location",
+      "description": "Filled in on generated location pages so a branch does not list itself."
+    },
+    {
+      "key": "locations",
+      "type": "list",
+      "label": "Locations",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "subtitle",
+          "type": "text",
+          "label": "Trading name"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Page link"
+        },
+        {
+          "key": "services",
+          "type": "text",
+          "label": "Services"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lc",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "lc-head",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "lc-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "lc-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lc-grid",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "styles": {
+            "base": {
+              "display": "grid",
+              "gridColumns": "1fr 1fr 1fr"
+            },
+            "tablet": {
+              "gridColumns": "1fr 1fr"
+            },
+            "mobile": {
+              "gridColumns": "1fr"
+            }
+          },
+          "children": [
+            {
+              "id": "lc-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "background": "card",
+                "padding": 5,
+                "repeat": "locations"
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "borderWidth": 1,
+                  "borderColor": "line",
+                  "borderStyle": "solid"
+                }
+              },
+              "children": [
+                {
+                  "id": "lc-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "eyebrow": "{{subtitle}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "lc-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}<br>{{city}}, {{region}} {{postalCode}}"
+                  }
+                },
+                {
+                  "id": "lc-svc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{services}}"
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "muted",
+                      "fontSize": 14
+                    }
+                  }
+                },
+                {
+                  "id": "lc-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "View location",
+                        "url": "{{href}}",
+                        "style": "primary",
+                        "intent": "view-location"
+                      },
+                      {
+                        "label": "{{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "link",
+                        "intent": "call-dealer"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

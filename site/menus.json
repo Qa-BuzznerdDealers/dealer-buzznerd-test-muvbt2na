@@ -5,36 +5,178 @@
       "id": "main",
       "name": "Main menu",
       "items": [
-        { "id": "home", "label": "Home", "type": "page", "ref": "home" },
-        { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
         {
-          "id": "about",
-          "label": "About",
-          "type": "url",
-          "url": "/about",
+          "id": "trucks",
+          "label": "Trucks",
+          "type": "page",
+          "ref": "new-trucks",
           "children": [
-            { "id": "about-team", "label": "Our team", "type": "url", "url": "/about#team" },
-            { "id": "about-history", "label": "History", "type": "url", "url": "/about#history" }
+            {
+              "id": "trucks-new",
+              "label": "New trucks",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "trucks-new-overview", "label": "New truck lineup", "type": "page", "ref": "new-trucks" },
+                { "id": "trucks-new-stock", "label": "In-stock new trucks", "type": "inventory", "ref": "inventory?condition=new" },
+                { "id": "trucks-new-all", "label": "All inventory", "type": "inventory", "ref": "inventory" }
+              ]
+            },
+            {
+              "id": "trucks-used",
+              "label": "Used trucks",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "trucks-used-overview", "label": "Why buy used from us", "type": "page", "ref": "used-trucks" },
+                { "id": "trucks-used-stock", "label": "In-stock used trucks", "type": "inventory", "ref": "inventory?condition=used" },
+                { "id": "trucks-used-trailers", "label": "Trailers", "type": "inventory", "ref": "search?q=trailer" }
+              ]
+            },
+            {
+              "id": "trucks-application",
+              "label": "Shop by application",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "trucks-app-sleeper", "label": "Sleeper tractors", "type": "inventory", "ref": "search?q=sleeper" },
+                { "id": "trucks-app-daycab", "label": "Day cabs", "type": "inventory", "ref": "search?q=day+cab" },
+                { "id": "trucks-app-dump", "label": "Dump & vocational", "type": "inventory", "ref": "search?q=dump" },
+                { "id": "trucks-app-medium", "label": "Medium duty", "type": "inventory", "ref": "search?q=medium+duty" }
+              ]
+            },
+            {
+              "id": "trucks-own",
+              "label": "Own or lease",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "trucks-own-finance", "label": "Financing", "type": "page", "ref": "financing" },
+                { "id": "trucks-own-lease", "label": "Leasing & rental", "type": "page", "ref": "leasing-rental" }
+              ]
+            }
           ]
         },
-        { "id": "contact", "label": "Contact", "type": "url", "url": "/contact" }
+        {
+          "id": "aftersales",
+          "label": "Parts & Service",
+          "type": "page",
+          "ref": "service",
+          "children": [
+            {
+              "id": "aftersales-parts",
+              "label": "Parts",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "aftersales-parts-dept", "label": "Parts department", "type": "page", "ref": "parts" },
+                { "id": "aftersales-parts-shop", "label": "Shop parts online", "type": "inventory", "ref": "parts" },
+                { "id": "aftersales-parts-search", "label": "Search by part number", "type": "inventory", "ref": "search" }
+              ]
+            },
+            {
+              "id": "aftersales-service",
+              "label": "Service",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "aftersales-service-dept", "label": "Service department", "type": "page", "ref": "service" },
+                { "id": "aftersales-service-find", "label": "Find a service center", "type": "page", "ref": "locations" }
+              ]
+            },
+            {
+              "id": "aftersales-fleet",
+              "label": "Fleet support",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "aftersales-fleet-lease", "label": "Full-service leasing", "type": "page", "ref": "leasing-rental" },
+                { "id": "aftersales-fleet-contact", "label": "Talk to a fleet specialist", "type": "page", "ref": "contact" }
+              ]
+            }
+          ]
+        },
+        { "id": "finance", "label": "Financing", "type": "page", "ref": "financing" },
+        { "id": "leasing", "label": "Leasing & Rental", "type": "page", "ref": "leasing-rental" },
+        { "id": "locations", "label": "Locations", "type": "page", "ref": "locations" },
+        {
+          "id": "company",
+          "label": "About",
+          "type": "page",
+          "ref": "about",
+          "children": [
+            {
+              "id": "company-us",
+              "label": "Company",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "company-about", "label": "About us", "type": "page", "ref": "about" },
+                { "id": "company-careers", "label": "Careers", "type": "page", "ref": "careers" },
+                { "id": "company-news", "label": "News", "type": "url", "url": "/blog" }
+              ]
+            },
+            {
+              "id": "company-touch",
+              "label": "Get in touch",
+              "type": "label",
+              "ref": null,
+              "children": [
+                { "id": "company-contact", "label": "Contact us", "type": "page", "ref": "contact" },
+                { "id": "company-locations", "label": "Locations & hours", "type": "page", "ref": "locations" }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "footer",
-      "name": "Footer menu",
+      "id": "utility",
+      "name": "Utility bar",
       "items": [
-        { "id": "f-inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "f-about", "label": "About", "type": "url", "url": "/about" },
-        { "id": "f-contact", "label": "Contact", "type": "url", "url": "/contact" }
+        { "id": "u-locations", "label": "Locations", "type": "page", "ref": "locations" },
+        { "id": "u-careers", "label": "Careers", "type": "page", "ref": "careers" },
+        { "id": "u-contact", "label": "Contact", "type": "page", "ref": "contact" },
+        { "id": "u-account", "label": "My account", "type": "inventory", "ref": "account" }
+      ]
+    },
+    {
+      "id": "footer-trucks",
+      "name": "Footer — Trucks",
+      "items": [
+        { "id": "ft-new", "label": "New trucks", "type": "page", "ref": "new-trucks" },
+        { "id": "ft-used", "label": "Used trucks", "type": "page", "ref": "used-trucks" },
+        { "id": "ft-inventory", "label": "All inventory", "type": "inventory", "ref": "inventory" },
+        { "id": "ft-lease", "label": "Leasing & rental", "type": "page", "ref": "leasing-rental" },
+        { "id": "ft-finance", "label": "Financing", "type": "page", "ref": "financing" }
+      ]
+    },
+    {
+      "id": "footer-service",
+      "name": "Footer — Parts & Service",
+      "items": [
+        { "id": "fs-parts", "label": "Parts department", "type": "page", "ref": "parts" },
+        { "id": "fs-shop", "label": "Shop parts online", "type": "inventory", "ref": "parts" },
+        { "id": "fs-service", "label": "Service department", "type": "page", "ref": "service" },
+        { "id": "fs-locations", "label": "Service locations", "type": "page", "ref": "locations" }
+      ]
+    },
+    {
+      "id": "footer-company",
+      "name": "Footer — Company",
+      "items": [
+        { "id": "fc-about", "label": "About us", "type": "page", "ref": "about" },
+        { "id": "fc-careers", "label": "Careers", "type": "page", "ref": "careers" },
+        { "id": "fc-news", "label": "News", "type": "url", "url": "/blog" },
+        { "id": "fc-contact", "label": "Contact", "type": "page", "ref": "contact" }
       ]
     },
     {
       "id": "legal",
       "name": "Legal",
       "items": [
-        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" },
-        { "id": "terms", "label": "Terms", "type": "url", "url": "/terms" }
+        { "id": "privacy", "label": "Privacy policy", "type": "page", "ref": "privacy" },
+        { "id": "terms", "label": "Terms of use", "type": "page", "ref": "terms" }
       ]
     }
   ]

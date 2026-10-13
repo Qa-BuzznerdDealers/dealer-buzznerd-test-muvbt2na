@@ -1,0 +1,153 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "privacy-head",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "privacy-head-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "privacy-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "privacy-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Privacy policy",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "privacy-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "This policy explains what information we collect through this website, how we use it and the choices you have."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "privacy-body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "privacy-body-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "privacy-body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "privacy-s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Information we collect",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "privacy-s1-t",
+                  "type": "text",
+                  "props": {
+                    "text": "When you submit a form we collect the details you provide, such as your name, email address, phone number and message. We also collect standard technical information such as your browser type and the pages you visit.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "privacy-s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "How we use it",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "privacy-s2-t",
+                  "type": "text",
+                  "props": {
+                    "text": "We use your information to respond to your enquiry, provide quotes and services you request, and improve this website. We do not sell your personal information.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "privacy-s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sharing",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "privacy-s3-t",
+                  "type": "text",
+                  "props": {
+                    "text": "We share information with service providers who help us operate the website and our business, and with lenders or manufacturers only when needed to complete something you asked for.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "privacy-s4-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Your choices",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "privacy-s4-t",
+                  "type": "text",
+                  "props": {
+                    "text": "You can ask us to access, correct or delete your information, or opt out of marketing messages, by contacting us using the details on our Contact page.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "privacy-s5-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Changes",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "privacy-s5-t",
+                  "type": "text",
+                  "props": {
+                    "text": "We may update this policy from time to time. The current version is always available on this page.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img"><title>A truck in a service bay</title><rect width="1200" height="800" fill="#1d2127"/><rect x="80" y="80" width="1040" height="560" fill="#2b3038"/><rect x="110" y="110" width="140" height="40" fill="#f2f3f5" opacity=".9"/><rect x="280" y="110" width="140" height="40" fill="#f2f3f5" opacity=".9"/><rect x="450" y="110" width="140" height="40" fill="#f2f3f5" opacity=".9"/><rect x="620" y="110" width="140" height="40" fill="#f2f3f5" opacity=".9"/><rect x="790" y="110" width="140" height="40" fill="#f2f3f5" opacity=".9"/><rect x="960" y="110" width="140" height="40" fill="#f2f3f5" opacity=".9"/><rect y="640" width="1200" height="160" fill="#3a414b"/><rect x="0" y="700" width="1200" height="10" fill="#e2a400"/><g transform="translate(250 0)"><g>
+  <path d="M120 630 V460 q0 -14 14 -14 H250 V630 Z" fill="#c8102e"/>
+  <rect x="138" y="480" width="80" height="22" rx="4" fill="#15181d" opacity=".35"/>
+  <path d="M230 630 V470 q0 -24 24 -24 H350 q20 0 26 20 L400 550 H540 q22 0 26 22 L575 630 Z" fill="#c8102e"/>
+  <path d="M270 470 H348 q12 0 16 12 L382 540 H270 Z" fill="#9fb3c8"/>
+  <rect x="552" y="564" width="20" height="96" rx="3" fill="#c9ced6"/>
+  <rect x="552" y="564" width="20" height="96" rx="3" fill="none" stroke="#3a414b" stroke-width="2"/>
+  <rect x="240" y="440" width="10" height="190" rx="5" fill="#c9ced6"/>
+  <rect x="270" y="580" width="90" height="34" rx="6" fill="#c9ced6"/>
+  <rect x="530" y="620" width="56" height="22" rx="4" fill="#c9ced6"/>
+  <rect x="80" y="628" width="510" height="16" fill="#3a414b"/>
+  <g><circle cx="500" cy="656" r="34" fill="#15181d"/><circle cx="500" cy="656" r="18.700000000000003" fill="#c9ced6"/><circle cx="500" cy="656" r="6.800000000000001" fill="#3a414b"/></g>
+  <g><circle cx="150" cy="656" r="34" fill="#15181d"/><circle cx="150" cy="656" r="18.700000000000003" fill="#c9ced6"/><circle cx="150" cy="656" r="6.800000000000001" fill="#3a414b"/></g><g><circle cx="70" cy="656" r="34" fill="#15181d"/><circle cx="70" cy="656" r="18.700000000000003" fill="#c9ced6"/><circle cx="70" cy="656" r="6.800000000000001" fill="#3a414b"/></g>
+  </g></g><rect x="60" y="300" width="40" height="340" fill="#e2a400"/><rect x="1100" y="300" width="40" height="340" fill="#e2a400"/></svg>

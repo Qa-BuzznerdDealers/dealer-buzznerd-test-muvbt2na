@@ -1,0 +1,285 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "ld-head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-header",
+        "values": {
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ld-info",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "ld-info-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ld-photo-col",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ld-photo",
+                  "type": "widget",
+                  "props": {
+                    "widget": "location-photo"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ld-facts-col",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ld-hours",
+                  "type": "widget",
+                  "props": {
+                    "widget": "hours",
+                    "config": {
+                      "heading": "Hours"
+                    }
+                  }
+                },
+                {
+                  "id": "ld-phones",
+                  "type": "widget",
+                  "props": {
+                    "widget": "phone-numbers"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ld-staff-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "ld-staff-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "ld-staff-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ld-staff",
+                  "type": "widget",
+                  "props": {
+                    "widget": "staff",
+                    "config": {
+                      "heading": "Meet the team"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ld-faq-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "ld-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ld-faq-hcol",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "ld-faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions",
+                    "eyebrow": "FAQ",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ld-faq-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "ld-faq",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ld-contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "ld-contact-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ld-contact-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "ld-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Send this location a message",
+                    "eyebrow": "Get in touch",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ld-contact-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Sales, parts or service — tell us what you need and the right person here will get back to you."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ld-contact-formcol",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 6
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "shadow": "md"
+                }
+              },
+              "children": [
+                {
+                  "id": "ld-contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "request-info"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ld-others",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-cards",
+        "values": {
+          "heading": "Other locations",
+          "locations": {
+            "source": "locations",
+            "config": {
+              "excludeSlug": "{{locationSlug}}",
+              "pagePathPrefix": "/locations"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,106 +1,338 @@
 {
-  "version": 1,
-  "blocks": [
+  "version": 2,
+  "nodes": [
     {
-      "id": "hero",
+      "id": "home-hero",
       "type": "hero",
       "props": {
-        "headingLevel": 1,
-        "eyebrow": "Trucks · Parts · Service",
-        "headline": "Your trusted partner on the road.",
-        "subhead": "New and used trucks, expert service, and genuine parts — all from one dealer you can rely on.",
+        "eyebrow": "Sales · Parts · Service · Leasing",
+        "headline": "Trucks that work as hard as you do.",
+        "subhead": "New and used heavy-duty trucks, genuine parts and factory-trained service — from one dealer network that keeps your business moving.",
+        "ctas": [
+          {
+            "ctaId": "shop-new"
+          },
+          {
+            "ctaId": "shop-used",
+            "style": "secondary"
+          }
+        ],
+        "image": {
+          "src": "/images/hero-truck.svg",
+          "alt": "A tractor-trailer on the highway at dusk",
+          "width": 1600,
+          "height": 900
+        },
         "showSearch": true,
-        "ctas": [{ "ctaId": "browse-inventory" }, { "ctaId": "request-quote", "style": "secondary" }]
+        "headingLevel": 1
       }
     },
     {
-      "id": "quick",
+      "id": "home-quick",
       "type": "iconGrid",
       "props": {
-        "heading": "How can we help?",
+        "heading": "How can we help today?",
         "items": [
           {
-            "label": "In-stock inventory",
-            "desc": "New and used trucks and trailers, priced and ready to move.",
-            "url": "/store"
+            "label": "Shop new trucks",
+            "desc": "Spec a new tractor or take one off the lot today.",
+            "url": "/new-trucks"
           },
           {
-            "label": "Parts counter",
-            "desc": "OEM and aftermarket parts, shipped or ready at the counter.",
-            "url": "/store"
+            "label": "Shop used trucks",
+            "desc": "Inspected, reconditioned and ready to work.",
+            "url": "/used-trucks"
           },
           {
-            "label": "Service & repair",
-            "desc": "Factory-trained technicians for inspections, warranty and repair.",
-            "url": "/contact"
+            "label": "Order parts",
+            "desc": "Genuine OEM and all-makes parts at every branch.",
+            "url": "/parts"
           },
           {
-            "label": "Financing",
-            "desc": "Flexible terms for owner-operators, with fast pre-approval.",
-            "url": "/contact"
+            "label": "Schedule service",
+            "desc": "Factory-trained technicians and extended hours.",
+            "url": "/service"
           }
         ]
       }
     },
     {
-      "id": "featured",
-      "type": "widget",
+      "id": "home-cats",
+      "type": "categoryGrid",
       "props": {
-        "widget": "inventory-carousel",
-        "config": { "heading": "Featured inventory", "limit": 4 }
+        "heading": "Shop by application",
+        "cta": {
+          "ctaId": "browse-inventory"
+        },
+        "items": [
+          {
+            "label": "Sleeper tractors",
+            "meta": "Long-haul & regional",
+            "url": "/store/search?q=sleeper",
+            "image": {
+              "src": "/images/cat-sleeper.svg",
+              "alt": "Sleeper tractor",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Day cabs",
+            "meta": "Regional, local & P&D",
+            "url": "/store/search?q=day+cab",
+            "image": {
+              "src": "/images/cat-day-cab.svg",
+              "alt": "Day cab tractor",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Dump & vocational",
+            "meta": "Construction & severe service",
+            "url": "/store/search?q=dump",
+            "image": {
+              "src": "/images/cat-dump.svg",
+              "alt": "Dump truck",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Medium duty",
+            "meta": "Box, flatbed & utility",
+            "url": "/store/search?q=medium+duty",
+            "image": {
+              "src": "/images/cat-box.svg",
+              "alt": "Medium-duty box truck",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Mixers",
+            "meta": "Ready-mix & concrete",
+            "url": "/store/search?q=mixer",
+            "image": {
+              "src": "/images/cat-mixer.svg",
+              "alt": "Concrete mixer truck",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Trailers",
+            "meta": "Dry van, reefer & flatbed",
+            "url": "/store/search?q=trailer",
+            "image": {
+              "src": "/images/cat-trailer.svg",
+              "alt": "Dry van trailer",
+              "width": 800,
+              "height": 500
+            }
+          }
+        ]
       }
     },
     {
-      "id": "band",
+      "id": "home-featured-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "home-featured-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "home-featured-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "home-featured",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {
+                      "heading": "Featured inventory",
+                      "limit": 8
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-stats",
       "type": "statBand",
       "props": {
         "heading": "Keeping your fleet on the road",
-        "body": "Every unit we sell is inspected in our own shop. When you buy from us you get a direct line to the people who worked on it.",
-        "ctas": [{ "ctaId": "about-us" }],
+        "body": "Every unit we sell is inspected in our own shop, and every customer gets a direct line to the people who service it.",
+        "ctas": [
+          {
+            "ctaId": "about-us"
+          }
+        ],
         "stats": [
-          { "value": "39", "label": "Years in business" },
-          { "value": "12k+", "label": "Units delivered" },
-          { "value": "4", "label": "Sales & service centers" },
-          { "value": "48hr", "label": "Avg. parts turnaround" }
+          {
+            "value": "39",
+            "label": "Years in business"
+          },
+          {
+            "value": "12k+",
+            "label": "Trucks delivered"
+          },
+          {
+            "value": "4",
+            "label": "Sales, parts & service centers"
+          },
+          {
+            "value": "48hr",
+            "label": "Average parts turnaround"
+          }
         ]
       }
     },
     {
-      "id": "locations",
-      "type": "widget",
+      "id": "home-service",
+      "type": "sharedSection",
       "props": {
-        "widget": "locations-map",
-        "config": { "heading": "Find a location", "showMap": true }
-      }
-    },
-    {
-      "id": "contact-row",
-      "type": "row",
-      "props": {
-        "align": "start",
-        "columns": [
-          [
+        "sectionId": "feature-split",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Uptime is the whole job",
+          "body": "Our service lanes are built around getting you back on the road: factory-trained diesel technicians, express lanes for PM and inspections, and advisors who call you before they guess.",
+          "image": {
+            "src": "/images/service-bay.svg",
+            "alt": "A tractor in a service bay",
+            "width": 1200,
+            "height": 800
+          },
+          "points": [
             {
-              "id": "contact-copy",
-              "type": "heading",
-              "props": { "text": "Talk to someone who knows the equipment", "headingLevel": 2 }
+              "label": "Extended hours",
+              "desc": "Early, late and weekend bays at our larger locations."
             },
             {
-              "id": "contact-text",
-              "type": "text",
-              "props": {
-                "text": "Tell us what the job needs and we will spec it, price it and tell you honestly what is in stock.\n\nPrefer the phone? <a href=\"tel:+15551234567\">Call us</a> during business hours."
-              }
+              "label": "All makes, all models",
+              "desc": "Engines, aftertreatment, electrical, brakes and drivetrain."
+            },
+            {
+              "label": "Fleet programs",
+              "desc": "Scheduled PM, priority bays and consolidated billing."
             }
           ],
-          [
+          "ctaLabel": "Schedule service",
+          "ctaUrl": "/service#form-service-request"
+        }
+      }
+    },
+    {
+      "id": "home-programs",
+      "type": "serviceGrid",
+      "props": {
+        "heading": "Own it, lease it or rent it",
+        "body": "However your business prefers to put trucks to work, we have a program built for it.",
+        "items": [
+          {
+            "label": "Financing",
+            "desc": "Fast decisions for owner-operators and fleets, including first-time buyers.",
+            "cta": {
+              "ctaId": "apply-financing"
+            }
+          },
+          {
+            "label": "Full-service leasing",
+            "desc": "One monthly payment covering the truck, maintenance and licensing.",
+            "cta": {
+              "label": "Explore leasing",
+              "url": "/leasing-rental",
+              "style": "link"
+            }
+          },
+          {
+            "label": "Short-term rental",
+            "desc": "Tractors and straight trucks by the day, week or month.",
+            "cta": {
+              "ctaId": "rental-quote",
+              "style": "link"
+            }
+          },
+          {
+            "label": "Genuine parts",
+            "desc": "Stocked deep at every branch, with delivery and online ordering.",
+            "cta": {
+              "ctaId": "shop-parts",
+              "style": "link"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "home-locations-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "home-locations-row",
+          "type": "row",
+          "props": {},
+          "children": [
             {
-              "id": "contact-form",
-              "type": "form",
-              "props": { "formId": "request-info" }
+              "id": "home-locations-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "home-locations",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "heading": "Find a location near you",
+                      "showMap": true
+                    }
+                  }
+                }
+              ]
             }
           ]
-        ]
+        }
+      ]
+    },
+    {
+      "id": "home-news",
+      "type": "postsList",
+      "props": {
+        "heading": "News & updates",
+        "count": 3,
+        "showDates": true,
+        "cta": {
+          "ctaId": "read-news"
+        }
+      }
+    },
+    {
+      "id": "home-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {}
       }
     }
   ]

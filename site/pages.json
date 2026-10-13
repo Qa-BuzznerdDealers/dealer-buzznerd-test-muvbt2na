@@ -2,7 +2,7 @@
   {
     "slug": "home",
     "title": "Home",
-    "description": "New and used trucks, service and parts from a dealer you can trust.",
+    "description": "New and used heavy-duty trucks, genuine parts, factory-trained service, leasing and financing across our dealer network.",
     "path": "/",
     "out": "index.html",
     "dir": "home",
@@ -17,5 +17,253 @@
       "utilityNav": null
     },
     "pageType": "Home"
+  },
+  {
+    "slug": "new-trucks",
+    "title": "New Trucks",
+    "description": "Spec and order new sleeper tractors, day cabs, vocational and medium-duty trucks — or drive one off the lot today.",
+    "path": "/new-trucks",
+    "out": "new-trucks/index.html",
+    "dir": "new-trucks",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "trucks"
+  },
+  {
+    "slug": "used-trucks",
+    "title": "Used Trucks",
+    "description": "Inspected, reconditioned used trucks and trailers with honest history reports and financing that fits.",
+    "path": "/used-trucks",
+    "out": "used-trucks/index.html",
+    "dir": "used-trucks",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "trucks"
+  },
+  {
+    "slug": "leasing-rental",
+    "title": "Leasing & Rental",
+    "description": "Full-service truck leasing, short-term rental and contract maintenance for fleets of every size.",
+    "path": "/leasing-rental",
+    "out": "leasing-rental/index.html",
+    "dir": "leasing-rental",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "trucks"
+  },
+  {
+    "slug": "financing",
+    "title": "Financing",
+    "description": "Truck financing for owner-operators and fleets — fast decisions, flexible terms and help with first-time buyers.",
+    "path": "/financing",
+    "out": "financing/index.html",
+    "dir": "financing",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "trucks"
+  },
+  {
+    "slug": "parts",
+    "title": "Parts",
+    "description": "Genuine OEM and all-makes truck parts, in stock at every branch, with delivery, will-call and online ordering.",
+    "path": "/parts",
+    "out": "parts/index.html",
+    "dir": "parts",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "aftersales"
+  },
+  {
+    "slug": "service",
+    "title": "Service",
+    "description": "Factory-trained diesel technicians, extended hours, mobile service and fleet maintenance programs.",
+    "path": "/service",
+    "out": "service/index.html",
+    "dir": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "aftersales"
+  },
+  {
+    "slug": "locations",
+    "title": "Locations",
+    "description": "Find a sales, parts and service location near you, with hours, phone numbers and directions.",
+    "path": "/locations",
+    "out": "locations/index.html",
+    "dir": "locations",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "locations"
+  },
+  {
+    "slug": "location-detail",
+    "title": "{{name}} — Trucks, Parts & Service",
+    "description": "Truck sales, parts and service at {{name}}, {{streetAddress}}, {{city}}, {{region}}. Call {{phone}}.",
+    "path": "/locations/:slug",
+    "out": "locations/:slug/index.html",
+    "dir": "location-detail",
+    "status": "published",
+    "group": "locations",
+    "forEach": "locations",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "about",
+    "title": "About Us",
+    "description": "A family of truck dealerships built on keeping customers moving — our story, our values and our people.",
+    "path": "/about",
+    "out": "about/index.html",
+    "dir": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "company"
+  },
+  {
+    "slug": "careers",
+    "title": "Careers",
+    "description": "Diesel technician, parts and sales careers with training, tooling support and room to grow.",
+    "path": "/careers",
+    "out": "careers/index.html",
+    "dir": "careers",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "company"
+  },
+  {
+    "slug": "contact",
+    "title": "Contact Us",
+    "description": "Reach sales, parts or service — call, send a message or visit the location nearest you.",
+    "path": "/contact",
+    "out": "contact/index.html",
+    "dir": "contact",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "company"
+  },
+  {
+    "slug": "privacy",
+    "title": "Privacy Policy",
+    "description": "How we collect, use and protect your information.",
+    "path": "/privacy",
+    "out": "privacy/index.html",
+    "dir": "privacy",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "legal"
+  },
+  {
+    "slug": "terms",
+    "title": "Terms of Use",
+    "description": "The terms that apply when you use this website.",
+    "path": "/terms",
+    "out": "terms/index.html",
+    "dir": "terms",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "legal"
   }
 ]

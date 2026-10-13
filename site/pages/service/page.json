@@ -1,0 +1,247 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "svc-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Service",
+        "headline": "Service that gets you back on the road.",
+        "subhead": "Factory-trained diesel technicians, express lanes and fleet maintenance programs at every service location.",
+        "ctas": [
+          {
+            "ctaId": "book-service"
+          },
+          {
+            "ctaId": "call-us"
+          }
+        ],
+        "image": {
+          "src": "/images/service-bay.svg",
+          "alt": "A tractor in a service bay",
+          "width": 1200,
+          "height": 800
+        },
+        "showSearch": false,
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "svc-grid",
+      "type": "serviceGrid",
+      "props": {
+        "heading": "What we work on",
+        "body": "From a quick PM to an in-frame overhaul — on our trucks and every other make.",
+        "items": [
+          {
+            "label": "Preventive maintenance",
+            "desc": "Scheduled PM, fluids, filters and inspections built around your dispatch."
+          },
+          {
+            "label": "Diagnostics & repair",
+            "desc": "Engine, aftertreatment, electrical, brakes, suspension and drivetrain."
+          },
+          {
+            "label": "Warranty & recalls",
+            "desc": "Factory warranty and campaign work handled in-house."
+          },
+          {
+            "label": "DOT inspections",
+            "desc": "Annual inspections with the paperwork done right."
+          }
+        ]
+      }
+    },
+    {
+      "id": "svc-uptime",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-split",
+        "values": {
+          "eyebrow": "Uptime",
+          "heading": "Every hour down costs you money",
+          "body": "We triage quickly, communicate clearly and get approval before we go further — so you always know where your truck stands.",
+          "image": {
+            "src": "/images/service-bay.svg",
+            "alt": "A tractor in a service bay",
+            "width": 1200,
+            "height": 800
+          },
+          "points": [
+            {
+              "label": "Express lanes",
+              "desc": "Quick-turn service for PM and minor repairs."
+            },
+            {
+              "label": "Clear communication",
+              "desc": "Calls and texts with diagnosis, estimate and status."
+            },
+            {
+              "label": "Fleet priority",
+              "desc": "Priority bays for fleet maintenance customers."
+            }
+          ],
+          "ctaLabel": "Find a service location",
+          "ctaUrl": "/locations"
+        }
+      }
+    },
+    {
+      "id": "svc-book",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "svc-book-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "svc-book-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "svc-book-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule service",
+                    "eyebrow": "Book a bay",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "svc-book-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us about the truck and what it needs. A service advisor will call to confirm your appointment."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "svc-book-formcol",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 6
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "shadow": "md"
+                }
+              },
+              "children": [
+                {
+                  "id": "svc-book-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "service-request"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "svc-faq-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "svc-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "svc-faq-col-h",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "svc-faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Service questions",
+                    "eyebrow": "FAQ",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "svc-faq-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "svc-faq",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Do you work on all makes?",
+                          "a": "Yes. Our technicians service all major makes of heavy and medium-duty trucks and trailers."
+                        },
+                        {
+                          "q": "Do I need an appointment?",
+                          "a": "Appointments get you in fastest, but we triage walk-ins and breakdowns as quickly as we can."
+                        },
+                        {
+                          "q": "Can you service my whole fleet?",
+                          "a": "Yes — ask about our fleet maintenance programs and contract maintenance."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

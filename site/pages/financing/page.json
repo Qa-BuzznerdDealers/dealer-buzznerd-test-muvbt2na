@@ -214,6 +214,9 @@
                           "a": "Yes, including older model years on many programs."
                         }
                       ]
+                    },
+                    "snapshot": {
+                      "items": []
                     }
                   }
                 }

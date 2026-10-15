@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img"><title>Medium duty box truck</title><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f8fa"/><stop offset="1" stop-color="#e3e6eb"/></linearGradient></defs><rect width="800" height="500" fill="url(#g)"/><rect y="420" width="800" height="80" fill="#cfd4db"/><g transform="translate(0 0)"><g transform="translate(20 0)"><rect x="20" y="150" width="330" height="220" rx="4" fill="#f5f6f8" stroke="#3a414b" stroke-width="3"/><rect x="40" y="190" width="290" height="40" fill="#c8102e"/><g>
+  
+  <path d="M360 380 V220 q0 -24 24 -24 H480 q20 0 26 20 L530 300 H670 q22 0 26 22 L705 380 Z" fill="#f5f6f8"/>
+  <path d="M400 220 H478 q12 0 16 12 L512 290 H400 Z" fill="#9fb3c8"/>
+  <rect x="682" y="314" width="20" height="96" rx="3" fill="#c9ced6"/>
+  <rect x="682" y="314" width="20" height="96" rx="3" fill="none" stroke="#3a414b" stroke-width="2"/>
+  <rect x="370" y="190" width="10" height="190" rx="5" fill="#c9ced6"/>
+  <rect x="400" y="330" width="90" height="34" rx="6" fill="#c9ced6"/>
+  <rect x="660" y="370" width="56" height="22" rx="4" fill="#c9ced6"/>
+  <rect x="320" y="378" width="400" height="16" fill="#3a414b"/>
+  <g><circle cx="630" cy="406" r="34" fill="#15181d"/><circle cx="630" cy="406" r="18.700000000000003" fill="#c9ced6"/><circle cx="630" cy="406" r="6.800000000000001" fill="#3a414b"/></g>
+  <g><circle cx="390" cy="406" r="34" fill="#15181d"/><circle cx="390" cy="406" r="18.700000000000003" fill="#c9ced6"/><circle cx="390" cy="406" r="6.800000000000001" fill="#3a414b"/></g><g><circle cx="310" cy="406" r="34" fill="#15181d"/><circle cx="310" cy="406" r="18.700000000000003" fill="#c9ced6"/><circle cx="310" cy="406" r="6.800000000000001" fill="#3a414b"/></g>
+  </g></g></g></svg>

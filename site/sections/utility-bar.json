@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "id": "utility-bar",
+  "name": "Utility bar",
+  "css": "",
+  "js": "",
+  "props": [
+    {
+      "key": "message",
+      "type": "richtext",
+      "label": "Left-hand message",
+      "default": "Sales · Parts · Service — call <a href=\"tel:+18005550100\">1-800-555-0100</a>"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ub",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 2
+      },
+      "styles": {
+        "base": {
+          "fontSize": 14
+        }
+      },
+      "children": [
+        {
+          "id": "ub-row",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "ub-left",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "ub-msg",
+                  "type": "text",
+                  "props": {
+                    "text": "{{message}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ub-right",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "ub-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "utility",
+                    "layout": "horizontal",
+                    "align": "end"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

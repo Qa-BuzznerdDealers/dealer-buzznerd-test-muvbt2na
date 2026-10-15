@@ -1,0 +1,169 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "lease-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Leasing & rental",
+        "headline": "Leasing & rental that keeps you rolling.",
+        "subhead": "Full-service leases, short-term rentals and contract maintenance — the trucks you need, without the overhead.",
+        "ctas": [
+          {
+            "ctaId": "rental-quote"
+          },
+          {
+            "ctaId": "call-us"
+          }
+        ],
+        "image": {
+          "src": "/images/hero-truck.svg",
+          "alt": "A tractor-trailer on the highway at dusk",
+          "width": 1600,
+          "height": 900
+        },
+        "showSearch": false,
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "lease-programs",
+      "type": "serviceGrid",
+      "props": {
+        "heading": "Programs for every fleet",
+        "body": "Pick the level of ownership and support that fits your operation.",
+        "items": [
+          {
+            "label": "Full-service lease",
+            "desc": "Truck, preventive maintenance, licensing and substitute vehicles in one monthly payment."
+          },
+          {
+            "label": "Short-term rental",
+            "desc": "Tractors and straight trucks by the day, week or month for peaks and projects."
+          },
+          {
+            "label": "Contract maintenance",
+            "desc": "Your trucks, our technicians — scheduled PM and repairs at a predictable cost."
+          },
+          {
+            "label": "Fleet management",
+            "desc": "Fuel, compliance and reporting support so your team can focus on freight."
+          }
+        ]
+      }
+    },
+    {
+      "id": "lease-maint",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-split",
+        "values": {
+          "eyebrow": "Maintenance included",
+          "heading": "We handle the shop, you handle the freight",
+          "body": "Leased units are maintained in our own bays by the technicians who know them best, with substitute vehicles when one is down.",
+          "image": {
+            "src": "/images/service-bay.svg",
+            "alt": "A tractor in a service bay",
+            "width": 1200,
+            "height": 800
+          },
+          "points": [
+            {
+              "label": "Scheduled PM",
+              "desc": "Planned around your dispatch, not ours."
+            },
+            {
+              "label": "Substitute vehicles",
+              "desc": "A replacement truck while yours is in the shop."
+            },
+            {
+              "label": "One invoice",
+              "desc": "Predictable monthly cost for budgeting."
+            }
+          ],
+          "ctaLabel": "Get a quote",
+          "ctaUrl": "/leasing-rental#form-rental-request"
+        }
+      }
+    },
+    {
+      "id": "lease-quote",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "lease-quote-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "lease-quote-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "lease-quote-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Request a lease or rental quote",
+                    "eyebrow": "Get started",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "lease-quote-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us how many trucks, what type and for how long. We will come back with options and pricing."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "lease-quote-formcol",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 6
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "shadow": "md"
+                }
+              },
+              "children": [
+                {
+                  "id": "lease-quote-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "rental-request"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

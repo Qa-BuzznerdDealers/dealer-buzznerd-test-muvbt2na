@@ -1,0 +1,357 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "new-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "New trucks",
+        "headline": "New trucks, spec’d for the job.",
+        "subhead": "Sleepers, day cabs, vocational and medium-duty trucks — order to your spec or drive one off the lot today.",
+        "ctas": [
+          {
+            "ctaId": "shop-new"
+          },
+          {
+            "ctaId": "request-quote"
+          }
+        ],
+        "image": {
+          "src": "/images/cat-sleeper.svg",
+          "alt": "Sleeper tractor",
+          "width": 800,
+          "height": 500
+        },
+        "showSearch": false,
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "new-cats",
+      "type": "categoryGrid",
+      "props": {
+        "heading": "Find your application",
+        "items": [
+          {
+            "label": "Sleeper tractors",
+            "meta": "Long-haul & regional",
+            "url": "/store/search?q=sleeper",
+            "image": {
+              "src": "/images/cat-sleeper.svg",
+              "alt": "Sleeper tractor",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Day cabs",
+            "meta": "Regional, local & P&D",
+            "url": "/store/search?q=day+cab",
+            "image": {
+              "src": "/images/cat-day-cab.svg",
+              "alt": "Day cab tractor",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Dump & vocational",
+            "meta": "Construction & severe service",
+            "url": "/store/search?q=dump",
+            "image": {
+              "src": "/images/cat-dump.svg",
+              "alt": "Dump truck",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Medium duty",
+            "meta": "Box, flatbed & utility",
+            "url": "/store/search?q=medium+duty",
+            "image": {
+              "src": "/images/cat-box.svg",
+              "alt": "Medium-duty box truck",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Mixers",
+            "meta": "Ready-mix & concrete",
+            "url": "/store/search?q=mixer",
+            "image": {
+              "src": "/images/cat-mixer.svg",
+              "alt": "Concrete mixer truck",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Trailers",
+            "meta": "Dry van, reefer & flatbed",
+            "url": "/store/search?q=trailer",
+            "image": {
+              "src": "/images/cat-trailer.svg",
+              "alt": "Dry van trailer",
+              "width": 800,
+              "height": 500
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "new-spec",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-split",
+        "values": {
+          "eyebrow": "Custom spec",
+          "heading": "Spec it with people who know your routes",
+          "body": "Tell us your loads, your lanes and your duty cycle. Our sales engineers will spec the engine, transmission, axle ratios and body to fit — and track your factory order all the way to delivery.",
+          "image": {
+            "src": "/images/cat-day-cab.svg",
+            "alt": "Day cab tractor",
+            "width": 800,
+            "height": 500
+          },
+          "points": [
+            {
+              "label": "Application engineering",
+              "desc": "Drivetrain and spec recommendations for your duty cycle."
+            },
+            {
+              "label": "Order tracking",
+              "desc": "Build-slot and delivery updates from order to keys."
+            },
+            {
+              "label": "Body & upfit partners",
+              "desc": "Dump bodies, boxes, flatbeds and PTO work arranged for you."
+            }
+          ],
+          "ctaLabel": "Request a quote",
+          "ctaUrl": "/new-trucks#form-request-a-quote"
+        }
+      }
+    },
+    {
+      "id": "new-stock-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "new-stock-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "new-stock-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "new-stock",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {
+                      "heading": "New trucks in stock",
+                      "limit": 8
+                    },
+                    "snapshot": {
+                      "listings": [
+                        {
+                          "slug": "3-international-workstar",
+                          "href": "products/3-international-workstar",
+                          "title": "INTERNATIONAL WORKSTAR",
+                          "price": "$0",
+                          "facts": [
+                            {
+                              "label": "Make",
+                              "value": "INTERNATIONAL"
+                            },
+                            {
+                              "label": "Model",
+                              "value": "WORKSTAR"
+                            }
+                          ],
+                          "image": null
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-quote",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "new-quote-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "new-quote-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "new-quote-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Request a quote",
+                    "eyebrow": "Get pricing",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "new-quote-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Send us the basics and a sales specialist will come back with pricing, availability and lead times — usually within one business day."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "new-quote-formcol",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 6
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "shadow": "md"
+                }
+              },
+              "children": [
+                {
+                  "id": "new-quote-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "request-a-quote"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "new-faq-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "new-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "new-faq-col-h",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "new-faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "New truck questions",
+                    "eyebrow": "FAQ",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "new-faq-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "new-faq",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "How long does a factory order take?",
+                          "a": "It depends on build slots and spec. Your salesperson will give you a current estimate when you order and update you as the build progresses."
+                        },
+                        {
+                          "q": "Can I trade in my current truck?",
+                          "a": "Yes. Tell us about it on the quote form or use Value my trade, and we will include a trade figure in your quote."
+                        },
+                        {
+                          "q": "Do you help with financing?",
+                          "a": "Yes — our finance team works with lenders for owner-operators and fleets. See the Financing page to apply."
+                        }
+                      ]
+                    },
+                    "snapshot": {
+                      "items": []
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

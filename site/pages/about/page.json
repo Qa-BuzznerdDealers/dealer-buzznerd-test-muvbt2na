@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "about-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "About us",
+        "headline": "Built on keeping customers moving.",
+        "subhead": "We are a family of truck dealerships with one job: keep the trucks our customers depend on working, earning and safe.",
+        "ctas": [
+          {
+            "ctaId": "find-location"
+          },
+          {
+            "ctaId": "view-careers"
+          }
+        ],
+        "image": {
+          "src": "/images/hero-truck.svg",
+          "alt": "A tractor-trailer on the highway at dusk",
+          "width": 1600,
+          "height": 900
+        },
+        "showSearch": false,
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "about-story",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-split",
+        "values": {
+          "eyebrow": "Our story",
+          "heading": "From one service bay to a dealer network",
+          "body": "We started with a single shop and a simple promise — treat every customer’s truck like it is the only one they own. That promise still drives every sale, every part and every repair across our locations.",
+          "image": {
+            "src": "/images/service-bay.svg",
+            "alt": "A tractor in a service bay",
+            "width": 1200,
+            "height": 800
+          },
+          "points": [
+            {
+              "label": "Sales",
+              "desc": "New and used trucks matched to the job."
+            },
+            {
+              "label": "Parts",
+              "desc": "Deep inventory at every branch."
+            },
+            {
+              "label": "Service",
+              "desc": "Factory-trained technicians and fleet programs."
+            }
+          ],
+          "ctaLabel": "Find a location",
+          "ctaUrl": "/locations"
+        }
+      }
+    },
+    {
+      "id": "about-values",
+      "type": "iconGrid",
+      "props": {
+        "heading": "What we stand for",
+        "items": [
+          {
+            "label": "Uptime first",
+            "desc": "Every decision starts with getting trucks back to work."
+          },
+          {
+            "label": "Straight talk",
+            "desc": "Honest pricing, honest timelines, honest advice."
+          },
+          {
+            "label": "Our people",
+            "desc": "We invest in training, tooling and careers."
+          },
+          {
+            "label": "Our communities",
+            "desc": "Local teams supporting the towns we serve."
+          }
+        ]
+      }
+    },
+    {
+      "id": "about-stats",
+      "type": "statBand",
+      "props": {
+        "heading": "By the numbers",
+        "stats": [
+          {
+            "value": "39",
+            "label": "Years in business"
+          },
+          {
+            "value": "12k+",
+            "label": "Trucks delivered"
+          },
+          {
+            "value": "4",
+            "label": "Locations"
+          },
+          {
+            "value": "48hr",
+            "label": "Average parts turnaround"
+          }
+        ]
+      }
+    },
+    {
+      "id": "about-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "heading": "Come work with us",
+          "body": "We are always looking for technicians, parts pros and salespeople who take pride in their work.",
+          "ctaLabel": "See open positions",
+          "ctaUrl": "/careers"
+        }
+      }
+    }
+  ]
+}

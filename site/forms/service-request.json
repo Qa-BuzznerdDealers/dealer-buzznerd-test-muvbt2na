@@ -1,0 +1,52 @@
+{
+  "id": "service-request",
+  "name": "Service appointment",
+  "status": "live",
+  "system": false,
+  "pdpContext": false,
+  "surfaces": ["page"],
+  "intent": "book-service",
+  "submitLabel": "Request appointment",
+  "successMessage": "Thanks — a service advisor will call to confirm your bay time.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about this service request by phone, text or email."
+  },
+  "fields": [
+    { "id": "sr-name", "type": "full_name", "label": "Full name", "required": true },
+    { "id": "sr-company", "type": "single_line", "label": "Company / fleet", "required": false },
+    { "id": "sr-email", "type": "email", "label": "Email", "required": true, "width": "half" },
+    { "id": "sr-phone", "type": "phone", "label": "Phone", "required": true, "width": "half" },
+    { "id": "sr-year", "type": "number", "label": "Vehicle year", "required": false, "width": "half" },
+    { "id": "sr-make", "type": "single_line", "label": "Make & model", "required": false, "width": "half" },
+    { "id": "sr-vin", "type": "single_line", "label": "VIN or unit number", "required": false, "width": "half" },
+    { "id": "sr-date", "type": "date", "label": "Preferred date", "required": false, "width": "half" },
+    {
+      "id": "sr-type",
+      "type": "dropdown",
+      "label": "What does it need?",
+      "required": true,
+      "options": [
+        { "value": "pm", "label": "Preventive maintenance" },
+        { "value": "repair", "label": "Diagnostics & repair" },
+        { "value": "warranty", "label": "Warranty / recall" },
+        { "value": "dot", "label": "DOT inspection" },
+        { "value": "collision", "label": "Collision & body" },
+        { "value": "other", "label": "Something else" }
+      ]
+    },
+    { "id": "sr-message", "type": "paragraph", "label": "Describe the problem", "required": false }
+  ],
+  "notifications": [
+    {
+      "id": "sr-default",
+      "name": "Service advisors",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "service-advisor",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

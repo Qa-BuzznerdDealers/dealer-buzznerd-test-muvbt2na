@@ -1,0 +1,177 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "careers-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Careers",
+        "headline": "Build your career in trucking.",
+        "subhead": "Technician, parts and sales careers with real training, tooling support and room to grow.",
+        "ctas": [
+          {
+            "ctaId": "apply-job"
+          },
+          {
+            "ctaId": "about-us",
+            "style": "secondary"
+          }
+        ],
+        "image": {
+          "src": "/images/service-bay.svg",
+          "alt": "A tractor in a service bay",
+          "width": 1200,
+          "height": 800
+        },
+        "showSearch": false,
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "careers-teams",
+      "type": "serviceGrid",
+      "props": {
+        "heading": "Teams we hire for",
+        "body": "Openings change often — tell us which team you are interested in and we will be in touch.",
+        "items": [
+          {
+            "label": "Diesel technicians",
+            "desc": "Entry-level to master technicians, with factory training paths.",
+            "cta": {
+              "ctaId": "apply-job",
+              "style": "link"
+            }
+          },
+          {
+            "label": "Parts",
+            "desc": "Counter, warehouse and outside sales roles.",
+            "cta": {
+              "ctaId": "apply-job",
+              "style": "link"
+            }
+          },
+          {
+            "label": "Sales",
+            "desc": "New, used, leasing and rental sales.",
+            "cta": {
+              "ctaId": "apply-job",
+              "style": "link"
+            }
+          },
+          {
+            "label": "Office & administration",
+            "desc": "Accounting, warranty, HR and customer service.",
+            "cta": {
+              "ctaId": "apply-job",
+              "style": "link"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "careers-benefits",
+      "type": "iconGrid",
+      "props": {
+        "heading": "Why work here",
+        "items": [
+          {
+            "label": "Paid training",
+            "desc": "Factory and in-house training programs."
+          },
+          {
+            "label": "Tooling support",
+            "desc": "Help building your tool set."
+          },
+          {
+            "label": "Benefits",
+            "desc": "Health coverage and retirement plans."
+          },
+          {
+            "label": "Room to grow",
+            "desc": "Promotion from within across our locations."
+          }
+        ]
+      }
+    },
+    {
+      "id": "careers-apply",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "careers-apply-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "careers-apply-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "careers-apply-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tell us about yourself",
+                    "eyebrow": "Apply",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "careers-apply-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Send your details and résumé. A hiring manager will reach out if there is a fit."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "careers-apply-formcol",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 6
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "shadow": "md"
+                }
+              },
+              "children": [
+                {
+                  "id": "careers-apply-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "careers"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

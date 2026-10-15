@@ -1,49 +1,19 @@
 [
-  {
-    "id": "browse-inventory",
-    "label": "Browse inventory",
-    "url": "/store",
-    "style": "primary",
-    "intent": "browse-inventory",
-    "newTab": false,
-    "active": true
-  },
-  {
-    "id": "request-quote",
-    "label": "Request a quote",
-    "url": null,
-    "formId": "request-a-quote",
-    "style": "primary",
-    "intent": "get-quote",
-    "newTab": false,
-    "active": true
-  },
-  {
-    "id": "book-service",
-    "label": "Book service",
-    "url": null,
-    "formId": "request-info",
-    "style": "secondary",
-    "intent": "book-service",
-    "newTab": false,
-    "active": true
-  },
-  {
-    "id": "call-us",
-    "label": "Call us",
-    "url": "tel:+15551234567",
-    "style": "secondary",
-    "intent": "call-dealer",
-    "newTab": false,
-    "active": true
-  },
-  {
-    "id": "about-us",
-    "label": "About us",
-    "url": "/about",
-    "style": "link",
-    "intent": "about",
-    "newTab": false,
-    "active": true
-  }
+  { "id": "browse-inventory", "label": "Shop all inventory", "url": "/store/inventory", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
+  { "id": "shop-new", "label": "Shop new trucks", "url": "/store/inventory?condition=new", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
+  { "id": "shop-used", "label": "Shop used trucks", "url": "/store/inventory?condition=used", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
+  { "id": "shop-parts", "label": "Shop parts online", "url": "/store/parts", "style": "primary", "intent": "browse-parts", "newTab": false, "active": true },
+  { "id": "request-quote", "label": "Request a quote", "url": "/new-trucks#form-request-a-quote", "formId": "request-a-quote", "style": "secondary", "intent": "get-quote", "newTab": false, "active": true },
+  { "id": "value-trade", "label": "Value my trade", "url": "/used-trucks#form-value-my-trade", "formId": "value-my-trade", "style": "secondary", "intent": "value-trade", "newTab": false, "active": true },
+  { "id": "book-service", "label": "Schedule service", "url": "/service#form-service-request", "formId": "service-request", "style": "primary", "intent": "book-service", "newTab": false, "active": true },
+  { "id": "parts-request", "label": "Ask the parts counter", "url": "/parts#form-parts-enquiry", "formId": "parts-enquiry", "style": "secondary", "intent": "parts-enquiry", "newTab": false, "active": true },
+  { "id": "apply-financing", "label": "Apply for financing", "url": "/financing#form-financing", "formId": "financing", "style": "primary", "intent": "apply-financing", "newTab": false, "active": true },
+  { "id": "rental-quote", "label": "Get a lease or rental quote", "url": "/leasing-rental#form-rental-request", "formId": "rental-request", "style": "primary", "intent": "rental-request", "newTab": false, "active": true },
+  { "id": "contact-us", "label": "Contact us", "url": "/contact#form-request-info", "formId": "request-info", "style": "secondary", "intent": "contact", "newTab": false, "active": true },
+  { "id": "apply-job", "label": "Apply now", "url": "/careers#form-careers", "formId": "careers", "style": "primary", "intent": "apply-job", "newTab": false, "active": true },
+  { "id": "find-location", "label": "Find a location", "url": "/locations", "style": "secondary", "intent": "find-location", "newTab": false, "active": true },
+  { "id": "call-us", "label": "Call 1-800-555-0100", "url": "tel:+18005550100", "style": "secondary", "intent": "call-dealer", "newTab": false, "active": true },
+  { "id": "about-us", "label": "About us", "url": "/about", "style": "link", "intent": "about", "newTab": false, "active": true },
+  { "id": "view-careers", "label": "See open positions", "url": "/careers", "style": "link", "intent": "careers", "newTab": false, "active": true },
+  { "id": "read-news", "label": "All news", "url": "/blog", "style": "link", "intent": "read-news", "newTab": false, "active": true }
 ]

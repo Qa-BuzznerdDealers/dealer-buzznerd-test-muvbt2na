@@ -1,0 +1,48 @@
+{
+  "id": "careers",
+  "name": "Careers interest",
+  "status": "live",
+  "system": false,
+  "pdpContext": false,
+  "surfaces": ["page"],
+  "intent": "apply-job",
+  "submitLabel": "Send application",
+  "successMessage": "Thanks for your interest — we will be in touch if there is a fit.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about employment opportunities by phone, text or email."
+  },
+  "fields": [
+    { "id": "ca-first", "type": "first_name", "label": "First name", "required": true, "width": "half" },
+    { "id": "ca-last", "type": "last_name", "label": "Last name", "required": true, "width": "half" },
+    { "id": "ca-email", "type": "email", "label": "Email", "required": true, "width": "half" },
+    { "id": "ca-phone", "type": "phone", "label": "Phone", "required": true, "width": "half" },
+    {
+      "id": "ca-role",
+      "type": "dropdown",
+      "label": "Which team?",
+      "required": true,
+      "options": [
+        { "value": "technician", "label": "Diesel technician" },
+        { "value": "parts", "label": "Parts" },
+        { "value": "sales", "label": "Sales" },
+        { "value": "office", "label": "Office & administration" },
+        { "value": "other", "label": "Other" }
+      ]
+    },
+    { "id": "ca-resume", "type": "file", "label": "Résumé (PDF)", "required": false },
+    { "id": "ca-message", "type": "paragraph", "label": "Tell us about your experience", "required": false }
+  ],
+  "notifications": [
+    {
+      "id": "ca-default",
+      "name": "Hiring",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

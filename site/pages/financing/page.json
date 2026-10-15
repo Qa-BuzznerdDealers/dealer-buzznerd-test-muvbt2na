@@ -1,0 +1,238 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "fin-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Financing",
+        "headline": "Financing built for trucking.",
+        "subhead": "Fast decisions, flexible terms and a finance team that understands owner-operators and fleets.",
+        "ctas": [
+          {
+            "ctaId": "apply-financing"
+          },
+          {
+            "ctaId": "call-us"
+          }
+        ],
+        "image": {
+          "src": "/images/hero-truck.svg",
+          "alt": "A tractor-trailer on the highway at dusk",
+          "width": 1600,
+          "height": 900
+        },
+        "showSearch": false,
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "fin-why",
+      "type": "iconGrid",
+      "props": {
+        "heading": "Why finance with us",
+        "items": [
+          {
+            "label": "Fast decisions",
+            "desc": "Most applications answered within one business day."
+          },
+          {
+            "label": "Owner-operators",
+            "desc": "Programs for first-time buyers and growing businesses."
+          },
+          {
+            "label": "Fleets",
+            "desc": "Multi-unit and master lease structures."
+          },
+          {
+            "label": "New, used & trailers",
+            "desc": "Financing for older units and trailers too."
+          }
+        ]
+      }
+    },
+    {
+      "id": "fin-apply",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "fin-apply-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "fin-apply-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "fin-apply-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Start your credit application",
+                    "eyebrow": "Apply",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "fin-apply-body",
+                  "type": "text",
+                  "props": {
+                    "text": "It only takes a few minutes. A finance specialist will contact you to complete the application — nothing is final until you sign."
+                  }
+                },
+                {
+                  "id": "fin-bring",
+                  "type": "list",
+                  "props": {
+                    "heading": "Helpful to have ready",
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Business details",
+                        "desc": "Legal name, years in business and authority numbers."
+                      },
+                      {
+                        "label": "Recent statements",
+                        "desc": "Bank statements or financials, depending on the program."
+                      },
+                      {
+                        "label": "The unit",
+                        "desc": "Stock number or details of the truck you want."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fin-apply-formcol",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 6
+              },
+              "styles": {
+                "base": {
+                  "radius": 6,
+                  "shadow": "md"
+                }
+              },
+              "children": [
+                {
+                  "id": "fin-apply-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "financing"
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fin-faq-sec",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "fin-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "fin-faq-col-h",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "fin-faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Financing questions",
+                    "eyebrow": "FAQ",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fin-faq-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "fin-faq",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Do you finance first-time owner-operators?",
+                          "a": "Yes. We work with lenders who have programs for newer businesses; terms depend on credit and down payment."
+                        },
+                        {
+                          "q": "Does applying affect my credit?",
+                          "a": "A full application usually involves a credit check. Your finance specialist will explain before anything is submitted."
+                        },
+                        {
+                          "q": "Can I finance a used truck or trailer?",
+                          "a": "Yes, including older model years on many programs."
+                        }
+                      ]
+                    },
+                    "snapshot": {
+                      "items": []
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "styles": {
+            "base": {
+              "columnGap": 56
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

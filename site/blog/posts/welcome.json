@@ -3,7 +3,51 @@
   "title": "Welcome to our new site",
   "date": "2026-08-01",
   "description": "A faster site, live inventory, and easier ways to reach the right department.",
-  "coverImage": null,
+  "coverImage": "/images/hero-truck.svg",
   "status": "published",
-  "body": "<p>We have rebuilt our website around live inventory. Every truck, trailer and part you see is what is actually on the lot, updated straight from our system.</p><p>Browse what is in stock, or get in touch and we will help you find the right unit.</p>"
+  "version": 2,
+  "nodes": [
+    {
+      "id": "welcome-body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "welcome-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "welcome-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "welcome-p0",
+                  "type": "text",
+                  "props": {
+                    "text": "We have rebuilt our website around live inventory. Every truck, trailer and part you see is what is actually on the lot, updated straight from our system.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "welcome-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Browse what is in stock, or get in touch and we will help you find the right unit.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

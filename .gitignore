@@ -106,6 +106,7 @@ temp/
 .history/
 
 *.yml
+!.github/workflows/*.yml
 docker-compose.yml
 .node_modules/
 .env

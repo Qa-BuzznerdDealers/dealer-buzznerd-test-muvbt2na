@@ -1,0 +1,60 @@
+# Keeps `draft` from falling behind `main`.
+#
+# The dashboard edits `draft` and publishes by fast-forwarding `main` to it.
+# Anything that lands on `main` some other way (a merged pull request, a
+# hotfix) leaves `draft` behind. The editor then opens a stale site, and
+# publishing is refused because it would move `main` backwards. This workflow
+# carries every push to `main` into `draft` straight away.
+name: Sync draft with main
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-draft
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Bring draft up to main
+        run: |
+          set -euo pipefail
+
+          if ! git ls-remote --exit-code --heads origin draft >/dev/null; then
+            echo "No draft branch yet; the platform creates it when the repo is connected. Nothing to do."
+            exit 0
+          fi
+          git fetch origin main draft
+
+          if git merge-base --is-ancestor origin/main origin/draft; then
+            echo "draft already contains main. Nothing to do."
+            exit 0
+          fi
+
+          if git merge-base --is-ancestor origin/draft origin/main; then
+            echo "draft is behind main; fast-forwarding."
+            git push origin origin/main:refs/heads/draft
+            exit 0
+          fi
+
+          echo "draft and main have diverged; merging main into draft."
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git checkout -B draft origin/draft
+          if ! git merge --no-edit origin/main -m "Sync draft with main"; then
+            git merge --abort || true
+            echo "::error::main and draft conflict. Merge main into draft by hand, then publish from the dashboard."
+            exit 1
+          fi
+          git push origin draft

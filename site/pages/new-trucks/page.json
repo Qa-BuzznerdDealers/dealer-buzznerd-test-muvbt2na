@@ -181,7 +181,38 @@
                               "value": "WORKSTAR"
                             }
                           ],
-                          "image": null
+                          "image": {
+                            "src": "preview/5f/4__preview.jpeg",
+                            "alt": "INTERNATIONAL WORKSTAR",
+                            "width": 600,
+                            "height": 400
+                          }
+                        },
+                        {
+                          "slug": "3-kenworth-t880",
+                          "href": "products/3-kenworth-t880",
+                          "title": "Kenworth T880",
+                          "price": "$0",
+                          "facts": [
+                            {
+                              "label": "Make",
+                              "value": "Western Star"
+                            },
+                            {
+                              "label": "Model",
+                              "value": "4900"
+                            },
+                            {
+                              "label": "Year",
+                              "value": "1995"
+                            }
+                          ],
+                          "image": {
+                            "src": "preview/a3/2-12__preview.jpg",
+                            "alt": "Kenworth T880",
+                            "width": 600,
+                            "height": 400
+                          }
                         }
                       ]
                     }

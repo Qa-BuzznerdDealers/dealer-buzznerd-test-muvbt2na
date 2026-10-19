@@ -283,6 +283,580 @@
     }
   ],
   "locationSnapshots": {
+    "tamap": {
+      "ld-head": {
+        "snapshots": {},
+        "data": {
+          "rooftop": [
+            {
+              "id": "19",
+              "name": "tamap",
+              "subtitle": "",
+              "slug": "tamap",
+              "num": "01",
+              "href": null,
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-photo": {
+        "snapshot": {
+          "photo": {
+            "src": "",
+            "alt": ""
+          }
+        }
+      },
+      "ld-hours": {
+        "snapshot": {
+          "location": "tamap",
+          "department": null,
+          "hours": [],
+          "schedules": []
+        }
+      },
+      "ld-phones": {
+        "snapshot": {
+          "numbers": []
+        }
+      },
+      "ld-staff": {
+        "snapshot": {
+          "staff": []
+        }
+      },
+      "ld-faq": {
+        "snapshot": {
+          "items": []
+        }
+      },
+      "ld-others": {
+        "snapshots": {},
+        "data": {
+          "locations": [
+            {
+              "id": "20",
+              "name": "sarasota",
+              "subtitle": "",
+              "slug": "sarasota-2",
+              "num": "01",
+              "href": "/locations/sarasota-2",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "8",
+              "name": "Buzznerd test",
+              "subtitle": "",
+              "slug": "sarasota",
+              "num": "02",
+              "href": "/locations/sarasota",
+              "streetAddress": "4111 NE",
+              "city": "seattle",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=4111%20NE%2C%20seattle",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "21",
+              "name": "DC",
+              "subtitle": "",
+              "slug": "dc",
+              "num": "03",
+              "href": "/locations/dc",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "22",
+              "name": "Davenport",
+              "subtitle": "",
+              "slug": "devnport",
+              "num": "04",
+              "href": "/locations/devnport",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      }
+    },
+    "sarasota-2": {
+      "ld-head": {
+        "snapshots": {},
+        "data": {
+          "rooftop": [
+            {
+              "id": "20",
+              "name": "sarasota",
+              "subtitle": "",
+              "slug": "sarasota-2",
+              "num": "01",
+              "href": null,
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-photo": {
+        "snapshot": {
+          "photo": {
+            "src": "",
+            "alt": ""
+          }
+        }
+      },
+      "ld-hours": {
+        "snapshot": {
+          "location": "sarasota",
+          "department": null,
+          "hours": [],
+          "schedules": []
+        }
+      },
+      "ld-phones": {
+        "snapshot": {
+          "numbers": []
+        }
+      },
+      "ld-staff": {
+        "snapshot": {
+          "staff": []
+        }
+      },
+      "ld-faq": {
+        "snapshot": {
+          "items": []
+        }
+      },
+      "ld-others": {
+        "snapshots": {},
+        "data": {
+          "locations": [
+            {
+              "id": "19",
+              "name": "tamap",
+              "subtitle": "",
+              "slug": "tamap",
+              "num": "01",
+              "href": "/locations/tamap",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "8",
+              "name": "Buzznerd test",
+              "subtitle": "",
+              "slug": "sarasota",
+              "num": "02",
+              "href": "/locations/sarasota",
+              "streetAddress": "4111 NE",
+              "city": "seattle",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=4111%20NE%2C%20seattle",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "21",
+              "name": "DC",
+              "subtitle": "",
+              "slug": "dc",
+              "num": "03",
+              "href": "/locations/dc",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "22",
+              "name": "Davenport",
+              "subtitle": "",
+              "slug": "devnport",
+              "num": "04",
+              "href": "/locations/devnport",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      }
+    },
     "sarasota": {
       "ld-head": {
         "snapshots": {},
@@ -373,17 +947,800 @@
       "ld-others": {
         "snapshots": {},
         "data": {
-          "locations": []
+          "locations": [
+            {
+              "id": "19",
+              "name": "tamap",
+              "subtitle": "",
+              "slug": "tamap",
+              "num": "01",
+              "href": "/locations/tamap",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "20",
+              "name": "sarasota",
+              "subtitle": "",
+              "slug": "sarasota-2",
+              "num": "02",
+              "href": "/locations/sarasota-2",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "21",
+              "name": "DC",
+              "subtitle": "",
+              "slug": "dc",
+              "num": "03",
+              "href": "/locations/dc",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "22",
+              "name": "Davenport",
+              "subtitle": "",
+              "slug": "devnport",
+              "num": "04",
+              "href": "/locations/devnport",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      }
+    },
+    "dc": {
+      "ld-head": {
+        "snapshots": {},
+        "data": {
+          "rooftop": [
+            {
+              "id": "21",
+              "name": "DC",
+              "subtitle": "",
+              "slug": "dc",
+              "num": "01",
+              "href": null,
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-photo": {
+        "snapshot": {
+          "photo": {
+            "src": "",
+            "alt": ""
+          }
+        }
+      },
+      "ld-hours": {
+        "snapshot": {
+          "location": "DC",
+          "department": null,
+          "hours": [],
+          "schedules": []
+        }
+      },
+      "ld-phones": {
+        "snapshot": {
+          "numbers": []
+        }
+      },
+      "ld-staff": {
+        "snapshot": {
+          "staff": []
+        }
+      },
+      "ld-faq": {
+        "snapshot": {
+          "items": []
+        }
+      },
+      "ld-others": {
+        "snapshots": {},
+        "data": {
+          "locations": [
+            {
+              "id": "19",
+              "name": "tamap",
+              "subtitle": "",
+              "slug": "tamap",
+              "num": "01",
+              "href": "/locations/tamap",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "20",
+              "name": "sarasota",
+              "subtitle": "",
+              "slug": "sarasota-2",
+              "num": "02",
+              "href": "/locations/sarasota-2",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "8",
+              "name": "Buzznerd test",
+              "subtitle": "",
+              "slug": "sarasota",
+              "num": "03",
+              "href": "/locations/sarasota",
+              "streetAddress": "4111 NE",
+              "city": "seattle",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=4111%20NE%2C%20seattle",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "22",
+              "name": "Davenport",
+              "subtitle": "",
+              "slug": "devnport",
+              "num": "04",
+              "href": "/locations/devnport",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      }
+    },
+    "devnport": {
+      "ld-head": {
+        "snapshots": {},
+        "data": {
+          "rooftop": [
+            {
+              "id": "22",
+              "name": "Davenport",
+              "subtitle": "",
+              "slug": "devnport",
+              "num": "01",
+              "href": null,
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-photo": {
+        "snapshot": {
+          "photo": {
+            "src": "",
+            "alt": ""
+          }
+        }
+      },
+      "ld-hours": {
+        "snapshot": {
+          "location": "Davenport",
+          "department": null,
+          "hours": [],
+          "schedules": []
+        }
+      },
+      "ld-phones": {
+        "snapshot": {
+          "numbers": []
+        }
+      },
+      "ld-staff": {
+        "snapshot": {
+          "staff": []
+        }
+      },
+      "ld-faq": {
+        "snapshot": {
+          "items": []
+        }
+      },
+      "ld-others": {
+        "snapshots": {},
+        "data": {
+          "locations": [
+            {
+              "id": "19",
+              "name": "tamap",
+              "subtitle": "",
+              "slug": "tamap",
+              "num": "01",
+              "href": "/locations/tamap",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "20",
+              "name": "sarasota",
+              "subtitle": "",
+              "slug": "sarasota-2",
+              "num": "02",
+              "href": "/locations/sarasota-2",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "8",
+              "name": "Buzznerd test",
+              "subtitle": "",
+              "slug": "sarasota",
+              "num": "03",
+              "href": "/locations/sarasota",
+              "streetAddress": "4111 NE",
+              "city": "seattle",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=4111%20NE%2C%20seattle",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            },
+            {
+              "id": "21",
+              "name": "DC",
+              "subtitle": "",
+              "slug": "dc",
+              "num": "04",
+              "href": "/locations/dc",
+              "streetAddress": null,
+              "city": "",
+              "region": "",
+              "postalCode": "",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": null,
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
         }
       }
     }
   },
   "locations": [
     {
+      "slug": "tamap",
+      "name": "tamap"
+    },
+    {
+      "slug": "sarasota-2",
+      "name": "sarasota"
+    },
+    {
       "slug": "sarasota",
       "name": "Buzznerd test",
       "city": "seattle",
       "streetAddress": "4111 NE"
+    },
+    {
+      "slug": "dc",
+      "name": "DC"
+    },
+    {
+      "slug": "devnport",
+      "name": "Davenport"
     }
   ]
 }

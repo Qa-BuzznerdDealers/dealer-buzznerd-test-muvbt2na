@@ -1,0 +1,153 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "terms-head",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "terms-head-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "terms-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "terms-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Terms of use",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "terms-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "By using this website you agree to these terms."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "terms-body-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "terms-body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "terms-s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Website content",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "terms-s1-t",
+                  "type": "text",
+                  "props": {
+                    "text": "We work to keep inventory, pricing and specifications accurate, but errors can occur. Prices, availability and specifications are subject to change without notice and are confirmed only at the time of sale.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "terms-s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Use of the site",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "terms-s2-t",
+                  "type": "text",
+                  "props": {
+                    "text": "You may use this website for lawful purposes only. Do not attempt to interfere with its operation or access areas you are not authorised to use.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "terms-s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Third-party links",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "terms-s3-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Links to other websites are provided for convenience. We are not responsible for their content or practices.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "terms-s4-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Limitation of liability",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "terms-s4-t",
+                  "type": "text",
+                  "props": {
+                    "text": "This website is provided as is. To the extent permitted by law, we are not liable for any loss arising from its use.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "terms-s5-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "terms-s5-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Questions about these terms can be sent to us through our Contact page.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

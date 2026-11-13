@@ -285,5 +285,24 @@
       "utilityNav": null
     },
     "group": "trucks"
+  },
+  {
+    "slug": "terms-copy",
+    "title": "Terms of Use (Copy)",
+    "description": "The terms that apply when you use this website.",
+    "path": "/terms-copy",
+    "out": "terms-copy/index.html",
+    "dir": "terms-copy",
+    "status": "draft",
+    "seo": {
+      "ogImage": null,
+      "noindex": true
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "legal"
   }
 ]

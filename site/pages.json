@@ -266,5 +266,24 @@
       "utilityNav": null
     },
     "group": "legal"
+  },
+  {
+    "slug": "new-trucks-copy",
+    "title": "New Trucks (Copy)",
+    "description": "Spec and order new sleeper tractors, day cabs, vocational and medium-duty trucks — or drive one off the lot today.",
+    "path": "/new-trucks-copy",
+    "out": "new-trucks-copy/index.html",
+    "dir": "new-trucks-copy",
+    "status": "draft",
+    "seo": {
+      "ogImage": null,
+      "noindex": true
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    },
+    "group": "trucks"
   }
 ]

@@ -1,0 +1,78 @@
+{
+  "slug": "hheavy-duty-truck",
+  "title": "Hheavy Duty Truck",
+  "description": "",
+  "status": "draft",
+  "date": "2026-11-16",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "hheavy-duty-truck-section",
+      "type": "section",
+      "props": {
+        "minHeight": "full",
+        "align": "center",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "hheavy-duty-truck-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "column-description",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "heading-hheavy-duty-truck",
+                  "type": "heading",
+                  "props": {
+                    "text": "Hheavy Duty Truck",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "text-introduction",
+                  "type": "text",
+                  "props": {
+                    "text": "Discover the powerful capabilities of our Hheavy Duty Trucks designed for ultimate performance on the toughest roads. Explore features, specifications and more about the most reliable trucks in the market.",
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "column-image",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "image-hheavy-duty-truck",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/media/hheavy-duty-truck.jpg",
+                      "alt": "Hheavy Duty Truck"
+                    },
+                    "caption": "Our reliable and robust Hheavy Duty Truck",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

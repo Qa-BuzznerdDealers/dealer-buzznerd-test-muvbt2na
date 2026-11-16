@@ -61,8 +61,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/media/hheavy-duty-truck.jpg",
-                      "alt": "Hheavy Duty Truck"
+                      "src": "https://vendure.aionerds.com/assets/source/2f/873082kwt7001jp_00000042354.webp",
+                      "alt": "Hheavy Duty Truck",
+                      "width": 300,
+                      "height": 200
                     },
                     "caption": "Our reliable and robust Hheavy Duty Truck",
                     "width": "full"

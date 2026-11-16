@@ -274,7 +274,7 @@
     "path": "/new-trucks-copy",
     "out": "new-trucks-copy/index.html",
     "dir": "new-trucks-copy",
-    "status": "draft",
+    "status": "published",
     "seo": {
       "ogImage": null,
       "noindex": true
